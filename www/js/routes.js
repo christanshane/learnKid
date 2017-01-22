@@ -10,30 +10,14 @@ angular.module('app.routes', [])
     
   
 
-      .state('menu.home', {
+      .state('menu.learnKid', {
     url: '/page1',
     views: {
       'side-menu21': {
-        templateUrl: 'templates/home.html',
-        controller: 'homeCtrl'
+        templateUrl: 'templates/learnKid.html',
+        controller: 'learnKidCtrl'
       }
     }
-  })
-
-  .state('menu.cart', {
-    url: '/page2',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/cart.html',
-        controller: 'cartCtrl'
-      }
-    }
-  })
-
-  .state('cloud', {
-    url: '/page3',
-    templateUrl: 'templates/cloud.html',
-    controller: 'cloudCtrl'
   })
 
   .state('menu', {
@@ -49,12 +33,12 @@ angular.module('app.routes', [])
   })
 
   .state('signup', {
-    url: '/page5',
+    url: '/signup',
     templateUrl: 'templates/signup.html',
     controller: 'signupCtrl'
   })
 
-$urlRouterProvider.otherwise('/side-menu21/page1')
+$urlRouterProvider.otherwise('/page4')
 
   
 
